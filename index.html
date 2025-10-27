@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Journey Back to Self</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cream': '#FFF9F0',
+                        'lavender': '#E6E6FA',
+                        'softblue': '#D4E6F1',
+                        'grayish': '#F5F5F5',
+                        'muted': '#7A7A7A'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-cream font-lato text-muted">
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Hero Section -->
+        <section class="py-20 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-poppins font-light text-gray-800 mb-6">Unfiltered Minds</h1>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto">How social media shapes our self-image and what we can do
+                about it</p>
+            <img class="py-16" src="./florian-schmetz-UAwNxfXESDY-unsplash.jpg" alt="decorative image">
+        </section>
+
+        <!-- Section 1: Day Comparison -->
+        <section id="comparison" class="py-16 scroll-mt-16">
+            <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-sm">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-softblue flex items-center justify-center">
+                        <i data-feather="activity" class="text-blue-500"></i>
+                    </div>
+                    <h2 class="text-3xl font-poppins font-medium text-gray-800">Day Comparison</h2>
+                </div>
+                <p class="text-lg mb-6">We often compare our everyday lives to the perfect moments others share online.
+                    Social media shows highlights, not reality, yet we measure our worth against those filtered posts.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-lavender bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Problem</h3>
+                        <p>Comparing your real life to someone's best moments lowers self-esteem and fuels anxiety.</p>
+                    </div>
+                    <div class="bg-softblue bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Why It Happens</h3>
+                        <p>People post what looks best, not what's real. Algorithms reward perfection. Validation
+                            through likes becomes addictive.</p>
+                    </div>
+                    <div class="bg-grayish p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Impact</h3>
+                        <p>Distorted reality, envy, dissatisfaction, emotional burnout.</p>
+                    </div>
+                </div>
+
+                <blockquote class="border-l-4 border-blue-300 pl-4 italic my-8 text-xl">
+                    "Don't judge your behind-the-scenes by someone else's highlight reel."
+                </blockquote>
+
+                <div class="bg-cream p-6 rounded-lg border border-gray-200">
+                    <h3 class="font-poppins font-medium text-gray-800 mb-2">Reflection Tip</h3>
+                    <p>"Unfollow accounts that drain your confidence. Take mindful breaks. Focus on gratitude for your
+                        unfiltered life."</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 scroll-mt-16">
+            <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-sm">
+        
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./gadiel-lazcano-ulPAVuxITEw-unsplash.jpg" class="d-block w-100" alt="depressed person">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Comparison is the thief of joy...</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./sydney-latham-fZ2hMpHIrbI-unsplash.jpg" class="d-block w-100" alt="showing a fake smile">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>People only show you what they want you to see!</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Filtered Beauty Ideals -->
+        <section id="beauty" class="py-16 scroll-mt-16">
+            <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-sm">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-lavender flex items-center justify-center">
+                        <i data-feather="eye" class="text-purple-500"></i>
+                    </div>
+                    <h2 class="text-3xl font-poppins font-medium text-gray-800">Filtered Beauty Ideals</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-grayish p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">1. Normalization of Distortion</h3>
+                        <p>
+                            It begins subtly — a filter that smooths skin, another that sharpens a jawline, one that
+                            brightens eyes. These polished faces in
+                            your feed
+                            recalibrate your sense of “normal" and "beauty".
+                        </p>
+                    </div>
+                    <div class="bg-lavender bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">2. The Mirror as Failure</h3>
+                        <p>
+                            Once distortion feels normal, your own reflection starts to feel “wrong”.
+                            You look in the mirror and see flaws that don’t exist — because you’re comparing yourself
+                            not to reality, but to a digital ghost.
+                        </p>
+                    </div>
+                    <div class="bg-softblue bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">3. The Unsolvable Puzzle</h3>
+                        <p>
+                            The natural response is to chase perfection — better lighting, new angles,
+                            more advanced edits, maybe even cosmetic changes. But the goal keeps shifting.
+                            You’re trying to match something that doesn’t exist outside the screen.
+                            This endless pursuit fuels anxiety, perfectionism, and a fractured sense of self.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-cream p-6 rounded-lg border border-gray-200">
+                    <h3 class="font-poppins font-medium text-gray-800 mb-2">Reflection Tip</h3>
+                    <p>
+                        "Notice how often you use filters. Try sharing an unfiltered photo — it’s a small rebellion for
+                        authenticity."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 scroll-mt-16">
+            <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-sm">
+        
+                <div class="container">
+                    <div class="row align-items-center h-100">
+                        <img src="./nicholas-kusuma-xb2DaEeX8jk-unsplash.jpg" alt="woman changing herself to please people"
+                            class="col-lg-6">
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <h5 class="img-desc">People start rejecting themselves to accept normalized "beauty standards".</h5>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center h-100">
+                        <div class="col-lg-6 order-2 order-lg-1 d-flex justify-content-center">
+                            <h5 class="img-desc">Be yourself — not the version the world tells you to be.</h5>
+                        </div>
+                        <img class="col-lg-6 order-1 order-lg-2" src="./hannah-xu-WBfD4PImKf0-unsplash.jpg" alt="beauty standards">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 3: Metrics ≠ Worth -->
+        <section id="metrics" class="py-16 scroll-mt-16">
+            <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-sm">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-softblue flex items-center justify-center">
+                        <i data-feather="bar-chart-2" class="text-blue-500"></i>
+                    </div>
+                    <h2 class="text-3xl font-poppins font-medium text-gray-800">Metrics ≠ Worth</h2>
+                </div>
+
+                <p class="text-lg mb-6">
+                    On social media, likes, followers, and views can start to feel like a score — a measure of how much
+                    we matter.
+                    When confidence depends on those numbers, every post becomes a test of self-worth.
+                    Platforms are built to reward engagement, so each like triggers a small hit of dopamine that keeps
+                    us coming back for more.
+                </p>
+
+                <div class="bg-grayish p-6 rounded-lg mb-8">
+                    <h3 class="font-poppins font-medium text-gray-800 mb-2">Impact</h3>
+                    <p>
+                        The constant pursuit of validation can lead to lower self-esteem, social comparison, and
+                        anxiety.
+                        It turns self-expression into performance, and connection into competition.
+                        As our focus narrows to numbers, we lose sight of genuine joy and creativity.
+                    </p>
+                </div>
+
+                <div class="bg-cream p-6 rounded-lg border border-gray-200">
+                    <h3 class="font-poppins font-medium text-gray-800 mb-2">Reflection Tip</h3>
+                    <p>
+                        "Hide your like counts. Post for yourself. Take breaks when you need to. Your value isn’t
+                        measured in metrics —
+                        it’s found in who you are beyond the numbers."
+                    </p>
+                </div>
+                
+                <img class="pt-5 rounded-xl" src="./brett-jordan-5raGYibuitU-unsplash.jpg" alt="like count">
+            </div>
+
+            
+
+        </section>
+
+
+        <!-- Section 4: Self-Objectification -->
+        <section id="objectification" class="py-16 scroll-mt-16">
+            <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-sm">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-lavender flex items-center justify-center">
+                        <i data-feather="user" class="text-purple-500"></i>
+                    </div>
+                    <h2 class="text-3xl font-poppins font-medium text-gray-800">Self-Objectification</h2>
+                </div>
+
+                <p class="text-lg mb-6">
+                    On social media, the front camera can quietly turn us into our own audience.
+                    We start watching ourselves from the outside — adjusting angles, fixing hair,
+                    and comparing our bodies to the ones we see online.
+                    Over time, this shift from living to observing erodes wellbeing and replaces
+                    self-connection with self-critique.
+                </p>
+
+                <div class="bg-grayish p-6 rounded-lg mb-8">
+                    <h3 class="font-poppins font-medium text-gray-800 mb-2">Impact</h3>
+                    <p>
+                        Self-objectification intensifies body dissatisfaction and drives compulsive body-checking.
+                        It increases the risk of disordered eating, heightens anxiety and depressive symptoms,
+                        and shrinks life to appearance. The more we evaluate how we look, the less we notice how we feel
+                        —
+                        moments get rated by aesthetics instead of meaning, and ease gives way to self-surveillance.
+                    </p>
+                </div>
+
+                <div class="bg-cream p-6 rounded-lg border border-gray-200">
+                    <h3 class="font-poppins font-medium text-gray-800 mb-2">Reflection Tip</h3>
+                    <p>
+                        "Turn the gaze inward. Post the memory, not the mirror. Set camera-free times with friends.
+                        Mute or unfollow accounts that trigger comparison.
+                        Practice body-neutral thoughts like, ‘My body lets me move, learn, rest.’
+                        Compliment effort, kindness, and creativity — not just looks."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 5: Social Evaluation & Harassment -->
+        <section id="harassment" class="py-16 scroll-mt-16">
+            <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-sm">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-softblue flex items-center justify-center">
+                        <i data-feather="alert-triangle" class="text-blue-500"></i>
+                    </div>
+                    <h2 class="text-3xl font-poppins font-medium text-gray-800">Social Evaluation & Harassment</h2>
+                </div>
+
+                <p class="text-lg mb-6">
+                    Social media constantly exposes users to public feedback — comments, likes, shares, and reactions.
+                    While this can create connection and visibility, it also builds an environment of continuous
+                    judgment.
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-grayish p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Key Aspects</h3>
+                        <p>
+                            <strong>Fear of Judgment & Self-Censorship:</strong>
+                            Many users anticipate criticism before they even post.
+                            They may delete photos, rewrite captions, or avoid sharing personal moments because they
+                            worry how others will react.
+                        </p>
+                    </div>
+                    <div class="bg-lavender bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Online Harassment</h3>
+                        <p>
+                            <strong>Negative Comments & The Inner Critic Effect:</strong>
+                            Online harassment, body shaming, and trolling are common — and even strangers’ words can
+                            leave lasting wounds.
+                        </p>
+                    </div>
+                    <div class="bg-softblue bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Pressures</h3>
+                        <p>
+                            <strong>Comparison & Public Pressure:</strong>
+                            Even without direct harassment, users compare themselves to others who seem to receive more
+                            praise or attention.
+                            This can cause feelings of invisibility, inadequacy, and exhaustion.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-grayish p-6 rounded-lg mb-8">
+                    <h3 class="font-poppins font-medium text-gray-800 mb-2">Impact</h3>
+                    <p>
+                        Long-term exposure to online judgment and hostility can result in lower self-esteem,
+                        heightened anxiety, depression, poor sleep, and emotional burnout.
+                        Over time, people may begin hiding their authentic selves behind a carefully curated image,
+                        afraid of the criticism that honesty might invite.
+                    </p>
+                </div>
+
+                <div class="bg-cream p-6 rounded-lg border border-gray-200">
+                    <h3 class="font-poppins font-medium text-gray-800 mb-2">Reflection Tip</h3>
+                    <p>
+                        "Mute negativity. Protect your peace. You don’t owe anyone constant visibility.
+                        Your wellbeing is more important than anyone’s opinion online."
+                    </p>
+                </div>
+
+                <div class="row w-100">
+                    <h2 class="text-3xl py-3 pt-5">Want to test yourself? Click the link below !</h2>
+                    <a href="https://www.psychologytoday.com/us/blog/400-friends-who-can-i-call/202005/how-sensitive-are-you-social-media-self-test"><h2 class="underline"><strong>How sensitive am I to social media?</strong> by Psychology Today.</h2>  </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Final Section -->
+        <section class="py-20 text-center">
+            <div class="max-w-2xl mx-auto">
+                <p class="text-3xl md:text-4xl font-poppins font-light text-gray-800 mb-8 animate-fade-in">You are not
+                    your feed. You are the moments between the posts — the quiet, the laughter, the living.</p>
+                <p class="text-xl italic">"When you stop chasing the perfect image, you start finding your real self."
+                </p>
+            </div>
+        </section>
+
+        <section id="about-us" class="py-16 scroll-mt-16">
+            <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-sm">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-softblue flex items-center justify-center">
+                        <i data-feather="info" class="text-blue-500"></i>
+                    </div>
+                    <h2 class="text-3xl font-poppins font-medium text-gray-800">This campaign was prepared by...</h2>
+                </div>
+                <p class="text-lg mb-6">SIX LAU students, ONE cause.</p>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-grayish p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Anthony Abdallah</h3>
+                    </div>
+                    <div class="bg-lavender bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Heros Ardzev Batouzian</h3>
+                    </div>
+                    <div class="bg-softblue bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Ahmad Ibrahim</h3>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-grayish p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Anthony Ibrahim</h3>
+                    </div>
+                    <div class="bg-lavender bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Mariam Issa</h3>
+                    </div>
+                    <div class="bg-softblue bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-poppins font-medium text-gray-800 mb-2">Farah Mikhael</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

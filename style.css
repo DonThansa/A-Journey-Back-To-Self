@@ -1,0 +1,56 @@
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 1.5s ease-out forwards;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+section[id] {
+    scroll-margin-top: 80px;
+}
+/* Navbar spacing handled by component */
+main {
+    padding-top: 70px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 70px;
+    }
+}
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+img.py-16, .border-imgs{
+    border-radius: 200px;
+}
+
+.row > img{
+    border-radius: 5%;
+}
+
+.img-desc {
+    padding: 100px 0;
+}
